@@ -1,14 +1,14 @@
 
 *{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    margin: 4;
+    margin: 0;
     padding: 0;
     text-decoration: none;
     box-sizing: border-box;
 }
 .logo{
     float: left;
-    margin: 15px;
+    margin: 10px;
     height: 0px;
     width: 0px;
     border-radius: 50%;
