@@ -1,10 +1,14 @@
 
 *{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
     margin: 0;
     padding: 0;
     text-decoration: none;
     box-sizing: border-box;
+}
+h1{
+    font-size: 30px;
 }
 .logo{
     float: left;
@@ -49,13 +53,13 @@ a:hover{
     z-index: 1;
     color:rgb(96, 73, 73);
     text-align: left;
-    font-size: 80px;
+    font-size: 60px;
     color: rgb(38, 9, 32);
     }
-  .jump{
-         font-size: 20px;
+.jump{
+    font-size: 20px;
   }
-  .separator{
+.separator{
     border-top: 25px solid;
     border-color:rgb(174, 119, 223); 
   }
@@ -63,9 +67,28 @@ a:hover{
     text-align: center;
     margin: 0 20%;
 }
-.Resources{
-    margin-left: 100px;
-    
+.Resources {
+    margin: 0 10%;
+}
+
+.lists {
+    float: left;
+    width: 40%;
+}
+
+.box {
+    float: right;
+    margin-top: -30px;
+    margin-right: 100px;
+}
+.box .quote{
+    width: 425px;
+    height: 150px;
+    padding: 20px;
+    background-color: rgb(183, 172, 195);
+    color: rgb(68, 37, 37);
+    border-radius: 20px;
+    text-align: center;
 }
 .Timer{
     position: absolute;
