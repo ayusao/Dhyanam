@@ -4,46 +4,51 @@
   margin: 20px auto;
 }
 body{
-  background-color: rgb(204, 172, 205);
+  background:url(../assets/dhyanamImg.jpg);
+  background-size: cover;
+  background-position:center;
+  align-items: center;
   text-align: center;
   display: block;
-  margin: 15% 35%;
+  margin: 15% 30%;
 }
 .box{
-  background-color: rgb(174, 101, 176);
+  background-color: rgba(174, 101, 176,0.8);
   padding: 10%;
 }
 input{
   margin: 5% 23%;
-  width: 100%;
+  width: 50%;
   min-height: 2em;
   text-align: center;
   display: block;
   height: 30px;
-  width: auto;
+  border-radius: 5px;
+  align-items: center;
 }
 
 button{
   font-size: 20px;
-  margin: 0 5px;
+  margin: 0% 2%;
   height: 40px;
   color: white;
+  border-radius: 5px;
+  text-align: center;
+  align-items: center;
+  border: none;
 }
-.start:hover{
-  color: black;
-}
-.pause:hover{
-  color: black;
-}
+.start:hover,
+.pause:hover,
 .reset:hover{
+  cursor: pointer;
   color: black;
 }
 .start{
-  background-color: rgb(220,0,0);
+  background-color: rgba(220,0,0,0.7);
 }
 .pause{
-  background-color: rgb(0,220,0);
+  background-color: rgba(0,220,0,0.7);
 }
 .reset{
-  background-color: rgb(0,0,220);
+  background-color: rgba(0,0,220,0.7);
 }

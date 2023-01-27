@@ -16,7 +16,7 @@ function updateCountdown() {
     totalSeconds--;
     if (totalSeconds < 0) {
         clearInterval(intervalId);
-        countdownEl.innerHTML = "Time's Up!";
+        countdownEl.innerHTML = "YAY! YOU DID IT";
     }
 }
 function startTimer() {
