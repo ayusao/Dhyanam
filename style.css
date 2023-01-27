@@ -8,7 +8,7 @@
     box-sizing: border-box;
 }
 h1{
-    font-size: 30px;
+    font-size: 40px;
 }
 .logo{
     float: left;
@@ -92,7 +92,7 @@ a:hover{
 }
 .Timer{
     position: absolute;
-    top: 130%;
+    top: 140%;
     right: 150px;
     padding: 10px 20px;
     text-transform: capitalize;
