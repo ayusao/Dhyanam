@@ -67,3 +67,15 @@ a:hover{
     margin-left: 100px;
     
 }
+.Timer{
+    position: absolute;
+    bottom: -300px;
+    right: 150px;
+    padding: 10px 20px;
+    text-transform: capitalize;
+    font-size: 20px;
+    color:#fff;
+    background:rgb(174, 119, 223);
+    text-decoration:none;
+    cursor: pointer;
+}
