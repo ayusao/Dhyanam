@@ -27,6 +27,12 @@ nav ul li{
     display: inline-block;    
     margin: 20px 20px;
 }
+a:active{
+    color: #000000;
+}
+a:hover{
+    color: #000000;
+}
 .image-container{
     position: relative;
     }
@@ -48,3 +54,10 @@ nav ul li{
   .jump{
          font-size: 20px;
   }
+.About{
+    text-align: center;
+    margin: 0 20%;
+}
+.Resources{
+    text-align: center;
+}
