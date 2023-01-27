@@ -35,9 +35,6 @@ function pauseResumeTimer() {
     }
 }
 
-function stopTimer(){
-    clearInterval(intervalId);
-}
 function resetTimer(){
     clearInterval(intervalId);
     totalSeconds = inputMinutes.value * 60;

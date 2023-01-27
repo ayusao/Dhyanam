@@ -3,3 +3,37 @@
   text-align: center;
   margin: 30px auto;
 }
+body{
+  background-color: rgb(204, 172, 205);
+  text-align: center;
+  display: block;
+  margin: 15% 35%;
+}
+.box{
+  background-color: rgb(174, 101, 176);
+  padding: 10%;
+}
+input{
+  margin: 5% 23%;
+  width: 100%;
+  min-height: 2em;
+  text-align: center;
+  display: block;
+  height: 30px;
+  width: auto;
+}
+
+button{
+  font-size: 20px;
+  margin: 0 5px;
+  height: 40px;
+}
+.start{
+  background-color: rgb(220,0,0);
+}
+.pause{
+  background-color: rgb(0,220,0);
+}
+.reset{
+  background-color: rgb(0,0,220);
+}

@@ -7,11 +7,12 @@
 </head>
 <body>
     <div id="countdown"></div>
+    <div class ="box">
     <input type="number" id="inputMinutes" placeholder="Enter time in minutes">
-    <button onclick="startTimer()">Start Timer</button>
-    <button id="pauseResume" onclick="pauseResumeTimer()">Pause</button>
-    <button onclick="stopTimer()">Stop</button>
-    <button onclick="resetTimer()">Reset</button>
+    <button class="start" onclick="startTimer()">Start Timer</button>
+    <button class="pause" id="pauseResume" onclick="pauseResumeTimer()">Pause</button>
+    <button class="reset" onclick="resetTimer()">Reset</button>
+</div>
     <script src="timer.js"></script>
 </body>
 </html>
