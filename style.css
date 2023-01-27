@@ -9,6 +9,7 @@
 .logo{
     float: left;
     margin: 10px;
+    margin-left: 30px;
     height: 0px;
     width: 0px;
     border-radius: 50%;
