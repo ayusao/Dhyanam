@@ -1,7 +1,7 @@
 #countdown {
   font-size: 60px;
   text-align: center;
-  margin: 30px auto;
+  margin: 20px auto;
 }
 body{
   background-color: rgb(204, 172, 205);
@@ -27,6 +27,16 @@ button{
   font-size: 20px;
   margin: 0 5px;
   height: 40px;
+  color: white;
+}
+.start:hover{
+  color: black;
+}
+.pause:hover{
+  color: black;
+}
+.reset:hover{
+  color: black;
 }
 .start{
   background-color: rgb(220,0,0);
