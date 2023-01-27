@@ -25,7 +25,7 @@ nav{
 }  
 nav ul li{
     display: inline-block;    
-    margin: 5px 20px;
+    margin: 20px 20px;
 }
 .image-container{
     position: relative;
