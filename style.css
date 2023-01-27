@@ -69,7 +69,7 @@ a:hover{
 }
 .Timer{
     position: absolute;
-    bottom: -300px;
+    top: 130%;
     right: 150px;
     padding: 10px 20px;
     text-transform: capitalize;
@@ -78,4 +78,6 @@ a:hover{
     background:rgb(174, 119, 223);
     text-decoration:none;
     cursor: pointer;
+    outline:none;
+    border-color:#fff;
 }
