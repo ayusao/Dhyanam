@@ -1,4 +1,11 @@
 
+*{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 4;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
 .logo{
     float: left;
     margin: 15px;
@@ -8,7 +15,9 @@
     border: 5px;
 }
 nav{
-    background-color: rgb(195, 187, 202); !important
+    background-color: rgb(174, 119, 223); 
+    height: 70px;
+    width: 100%;
 }
  nav ul{
     float: right;
@@ -36,4 +45,6 @@ nav ul li{
     font-size: 70px;
     color: rgb(44, 40, 37);
     }
-  
+  .jump{
+         font-size: 20px;
+  }
