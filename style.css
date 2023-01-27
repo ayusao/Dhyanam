@@ -13,6 +13,7 @@ h1{
 .logo{
     float: left;
     margin: 10px;
+    margin-left: 30px;
     height: 0px;
     width: 0px;
     border-radius: 50%;
@@ -88,4 +89,16 @@ a:hover{
     color: rgb(68, 37, 37);
     border-radius: 20px;
     text-align: center;
+}
+.Timer{
+    position: absolute;
+    bottom: -300px;
+    right: 150px;
+    padding: 10px 20px;
+    text-transform: capitalize;
+    font-size: 20px;
+    color:#fff;
+    background:rgb(174, 119, 223);
+    text-decoration:none;
+    cursor: pointer;
 }
