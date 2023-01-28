@@ -6,20 +6,27 @@
         <script src = "test.js"> async</script>
     </head>
     <body>
-        <form>
-            <h1> Log In</h1>
-            <div class = "textBox">
-                <input type="email" placeholder="email" autocomplete="off" class="email" required>
-            </div>
-            <div class = "textBox">
-                <input type="password" placeholder="password">
-            </div>
-            <input type="submit" value="Login" class="loginBtn">
-            <div class="signup">
-                Don't have an account?
-            </br>
-            <a herf = "#">Sign up</a>
-            </div>
-        </form>
+        <div class="login">
+            <form name='form-login'>
+        
+                <h1>SIGN IN</h1>
+        
+                <label for="userName">Email</label>
+                <input type="email" id="userName" placeholder="Username" required>
+        
+                <label for="userPw">Password</label>
+                <input type="password" id= "userPw" placeholder="Password" required>
+        
+                <div id="remember">
+                    <input type="checkbox" value="lsRememberMe" id="rememberMe"
+                           style="display: inline-block;">
+                    <label>Remember me</label>
+                </div>
+        
+                <input id= "login_btn" type="submit" value="Login" onclick="check()">
+        
+            </form>
+        </div>
+        
     </body>
 </html>
