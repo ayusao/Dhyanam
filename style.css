@@ -74,7 +74,7 @@ a:hover{
 .Resources {
     margin: 0 10%;
 }
-.Resources li{
+.Resources li a{
     font-size: 30px;
     padding: 5px;
 }
