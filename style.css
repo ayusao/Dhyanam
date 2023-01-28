@@ -112,9 +112,7 @@ a:hover{
     color: black;
 }
 .lists .blogs{
-    font-size: 18px;
     color: blue;
-    text-decoration: underline;
 }
 .Timer{
     position: absolute;
