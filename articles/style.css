@@ -9,20 +9,55 @@ body{
 h1{
     text-align: center;
 }
-.images{   
+/* .images{   
     justify-content: center;
     align-items: center;
     display: flex;
     flex-wrap: wrap;
-}
-.images img {
+} */
+/* .images img {
     height: 200px;
     width: 250px;
     padding: 20px;
-    margin: 10px 30px;
+    margin: 20px 30px;
     display: block;
     cursor: pointer;
-  }
+  } */
+
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.images a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+}
+
+.images img { 
+    height: 200px;
+    width: 250px;
+    padding: 20px;
+    /* margin: 10px 30px; */
+    display: flex;
+    flex-wrap: wrap;
+  align-items: center;
+    cursor: pointer;
+}
+
+.description {
+    font-size: 20px;
+    /* margin-top: 10px; */
+    text-align: center;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
 a img:hover {
     opacity: 0.7;
   }

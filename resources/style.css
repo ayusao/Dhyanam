@@ -8,3 +8,24 @@ body{
 a{
     color: #000;
 }
+.lists{   
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.lists img {
+    height: 200px;
+    width: 250px;
+    padding: 20px;
+    margin: 10px 30px;
+    display: block;
+    cursor: pointer;
+  }
+  /* ul{
+
+  }
+  ul li{
+    display: inline-block;
+    margin: 60px 10px;
+  } */
