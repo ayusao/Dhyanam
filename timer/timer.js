@@ -17,18 +17,24 @@ function updateCountdown() {
     if (totalSeconds < 0) {
         clearInterval(intervalId);
         countdownEl.innerHTML = "YAY! YOU DID IT";
+        audio.pause();
     }
 }
+var audio = new Audio('../audio/testAudio.mp3');
 function startTimer() {
+    audio.play();
     totalSeconds = inputMinutes.value * 60;
     intervalId = setInterval(updateCountdown, 1000);
 }
 function pauseResumeTimer() {
+    
     if (!isPaused) {
+        audio.pause();
         clearInterval(intervalId);
         isPaused = true;
         document.getElementById("pauseResume").innerHTML = "Resume";
     } else {
+        audio.play();
         intervalId = setInterval(updateCountdown, 1000);
         isPaused = false;
         document.getElementById("pauseResume").innerHTML = "Pause";
