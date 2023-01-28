@@ -50,7 +50,7 @@ a:hover{
     }
 .image-container p{
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%,-50%);
     z-index: 1;
@@ -82,28 +82,39 @@ a:hover{
     float: left;
     width: 40%;
 }
-
 .box {
-    float: right;
-    margin-top: -30px;
-    margin-right: 50px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.box h3{
+    position: absolute;
+    top: 15%;
+    left: 50px;
 }
 .box .quote{
+    position: absolute;
+    top: 20%;
+    left: 45px;
+    float: left;
     width: 425px;
     height: 150px;
     padding: 20px;
-    background-color: rgba(219, 165, 219,0.5);
-    color: rgb(68, 37, 37);
+    background-color: rgba(255, 255, 255,0.3);
+    color:rgb(38, 9, 32);
     border-radius: 20px;
     text-align: center;
 }
 .box .quote2{
-    margin-top:5px;
+    position:absolute;
+    top: 40%;
+    left: 45px;
     width: 425px;
     height: 300px;
     padding: 30px;
-    background-color: rgba(219, 165, 219,0.5);
-    color: rgb(68, 37, 37);
+    background-color: rgba(255, 255, 255,0.3);
+    color:rgb(38, 9, 32);
     border-radius: 20px;
     text-align: center;
 }
@@ -116,8 +127,8 @@ a:hover{
 }
 .Timer{
     position: absolute;
-    top: 20%;
-    right: 150px;
+    top: 80%;
+    left: 45%;
     padding: 10px 20px;
     text-transform: capitalize;
     font-size: 20px;
