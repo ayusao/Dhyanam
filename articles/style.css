@@ -4,7 +4,6 @@ body{
     background-image: url("../assets/blurredimage.png");
     background-size: cover;
     background-repeat: no-repeat;
-
 }
 h1{
     text-align: center;
@@ -15,7 +14,6 @@ h1{
     align-items: center;
     justify-content: center;
 }
-
 .images a {
     display: flex;
     flex-direction: column;
@@ -25,18 +23,15 @@ h1{
     text-decoration: none;
     color: #000;
 }
-
 .images img { 
     height: 200px;
     width: 250px;
     padding: 20px 20px 5px 20px;
-    /* margin: 10px 30px; */
     display: flex;
     flex-wrap: wrap;
   align-items: center;
     cursor: pointer;
 }
-
 .description {
     font-size: 20px;
     /* margin-top: 10px; */
@@ -44,8 +39,7 @@ h1{
     word-wrap: break-word;
     word-break: break-all;
 }
-
-a img:hover {
-    opacity: 0.7;
+a .description:hover {
+    text-decoration: underline;
   }
   
