@@ -32,6 +32,9 @@ nav ul li{
     display: inline-block;    
     margin: 20px 20px;
 }
+a{
+    color:rgba(255, 255, 255);
+}
 a:active{
     color: #000000;
 }
@@ -66,21 +69,11 @@ a:hover{
     border-top: 25px solid;
     border-color:rgb(174, 119, 223); 
     margin-bottom:40px;
+    margin-left: 0;
   }
 .About{
     text-align: center;
     margin: 0 20%;
-}
-.Resources {
-    margin: 0 10%;
-}
-.Resources li a{
-    font-size: 30px;
-    padding: 5px;
-}
-.lists {
-    float: left;
-    width: 40%;
 }
 .box {
     float: left;
@@ -88,11 +81,11 @@ a:hover{
     margin-left: 10px;
 }
 
-.box h3{
+/* .box h3{
     position: absolute;
     top: 15%;
     left: 50px;
-}
+} */
 .box .quote{
     position: absolute;
     top: 20%;
@@ -108,22 +101,15 @@ a:hover{
 }
 .box .quote2{
     position:absolute;
-    top: 40%;
-    left: 45px;
+    top: 20%;
+    right: 45px;
     width: 425px;
     height: 300px;
-    padding: 30px;
+    padding: 20px;
     background-color: rgba(255, 255, 255,0.3);
     color:rgb(38, 9, 32);
     border-radius: 20px;
     text-align: center;
-}
-.lists .blogs:hover{
-    cursor: pointer;
-    color: black;
-}
-.lists a:visited{
-    color: blue;
 }
 .Timer{
     position: absolute;
