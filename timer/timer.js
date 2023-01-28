@@ -1,6 +1,7 @@
 
 let inputMinutes = document.getElementById("inputMinutes");
 let totalSeconds = 0;
+let audiSec = 0;
 let isPaused = false;
 
 const countdownEl = document.getElementById('countdown');
@@ -14,14 +15,23 @@ function updateCountdown() {
     seconds = (seconds < 10) ? "0" + seconds : seconds;
     countdownEl.innerHTML = `${minutes}:${seconds}`;
     totalSeconds--;
+    audiSec++;
     if (totalSeconds < 0) {
         clearInterval(intervalId);
         countdownEl.innerHTML = "YAY! YOU DID IT";
         audio.pause();
     }
+
+    if(audiSec/60 >= 2)
+    {
+        audio.currentTime =0;
+        audio.play();
+        audiSec =0;
+    }
 }
 var audio = new Audio('../audio/testAudio.mp3');
 function startTimer() {
+    audio.currentTime =0;
     audio.play();
     totalSeconds = inputMinutes.value * 60;
     intervalId = setInterval(updateCountdown, 1000);
@@ -42,6 +52,8 @@ function pauseResumeTimer() {
 }
 
 function resetTimer(){
+    audio.currentTime =0;
+    audio.play();
     clearInterval(intervalId);
     totalSeconds = inputMinutes.value * 60;
     countdownEl.innerHTML = `${inputMinutes.value}:00`;
