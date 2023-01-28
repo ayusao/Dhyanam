@@ -5,6 +5,9 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
 }
+h1{
+    text-align: center;
+}
 a{
     color: #000;
     text-decoration: none;
