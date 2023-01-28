@@ -70,15 +70,18 @@ function store(){
 
 //checking
 function check(){
+    // store();
     var storedName = localStorage.getItem('name');
     var storedPw = localStorage.getItem('pw');
+    console.log('storedName',storedName);
 
     var userName = document.getElementById('userName');
     var userPw = document.getElementById('userPw');
     var userRemember = document.getElementById("rememberMe");
 
-    if(userName.value == storedName && userPw.value == storedPw){
-        alert('You are logged in.');
+    if(userName.value == 'hiiii@gmail.com' && userPw.value == '1234'){
+        // alert('You are logged in.');
+        window.location.href="http://programminghead.com"; 
     }else{
         alert('Error on login');
     }
