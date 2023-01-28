@@ -29,3 +29,6 @@ a{
     word-wrap: break-word;
     word-break: break-all;
 }
+a .description:hover {
+    text-decoration: underline;
+  }
