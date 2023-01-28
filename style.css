@@ -111,7 +111,7 @@ a:hover{
     cursor: pointer;
     color: black;
 }
-.lists .blogs{
+.lists a:visited{
     color: blue;
 }
 .Timer{
