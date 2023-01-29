@@ -53,7 +53,7 @@ function pauseResumeTimer() {
 
 function resetTimer(){
     audio.currentTime =0;
-    audio.play();
+    audio.pause();
     clearInterval(intervalId);
     totalSeconds = inputMinutes.value * 60;
     countdownEl.innerHTML = `${inputMinutes.value}:00`;

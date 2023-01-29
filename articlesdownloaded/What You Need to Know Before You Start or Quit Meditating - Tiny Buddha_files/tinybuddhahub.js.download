@@ -1,0 +1,78 @@
+var carousel = [];
+
+var tinybuddha = {
+
+	 getUrlVar: function (key){
+	    var result = new RegExp(key + "=([^&]*)", "i").exec(window.location.search);
+	    return result && unescape(result[1]) || "";
+	},
+
+	linkToMorePosts: function() {
+
+		if ( tinybuddha.getUrlVar( 'fromterm' ) !== '' ) {
+
+			const fetchPromise = fetch( tbvars.resturl + 'hub/' + tinybuddha.getUrlVar( 'fromterm' ) );
+
+			fetchPromise.then(response => {
+				return response.json();
+			}).then( data => {
+
+				var hubname = document.getElementById( 'tinybuddha-hub-more-name' ),
+					link = document.getElementById( 'tinybuddha-hub-more-link' );
+
+				if (hubname && link ) {
+
+					link.setAttribute('href', data.link );
+					hubname.innerHTML = data.name;
+
+					/* unhide the link to more posts */
+					document.getElementById( 'tinybuddha-hub-more' ).setAttribute( 'style' , 'display:block;' );
+				}
+
+
+
+			});
+		}
+	}
+
+};
+
+!(function($) {
+
+	$( document ).ready( function() {
+
+		/* https://loryjs.github.io/lory/ */
+
+		$( '.slick-slider' ).each( function( index ){
+
+			$( this ).slick( {
+				infinite: false,
+				slidesToShow: 3 ,
+				centerMode: false,
+				centerPadding: '10px',
+				responsive: [
+				    {
+				      breakpoint: 768,
+				      settings: {
+				        arrows: true,
+				        centerMode: false,
+				        centerPadding: '20px',
+				        slidesToShow: 2
+				      }
+				    },
+				    {
+				      breakpoint: 480,
+				      settings: {
+				        arrows: true,
+				        centerMode: false,
+				        centerPadding: '20px',
+				        slidesToShow: 1
+				      }
+				    }
+				  ]	});
+
+		});
+
+	});
+
+})(jQuery);

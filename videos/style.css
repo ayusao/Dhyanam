@@ -26,3 +26,18 @@ video{
     height: 320px;
     align-items: center;
 }
+.video-container {
+    position: relative;
+  }
+  
+  .videos .video-description {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+  }
+  
+.video-description:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }

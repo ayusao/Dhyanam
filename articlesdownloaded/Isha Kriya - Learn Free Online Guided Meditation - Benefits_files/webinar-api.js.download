@@ -1,0 +1,120 @@
+
+var webinarApi = {}
+
+
+;(function () {
+    var webinarDates = {
+        intro: [
+            {
+                date: 'Dec 11',
+                time: '8pm'
+            },
+            {
+                date: 'Dec 13',
+                time: '8pm'
+            },
+        ],
+        ik: {
+            date: 'Dec 12',
+            time: '8pm'
+        },
+        yfs: {
+            date: 'Dec 12',
+            time: '8pm'
+        },
+        refresher: {
+            date: 'July 28',
+            time: '4pm'
+        }
+    }
+
+    var newWebinarDates = {
+        intro: [         
+           {
+                date: '2019-10-03',
+                time: '8PM CT',
+                displayTime: '6PM PT | 8PM CT | 9PM ET'
+            },
+            {
+                date: '2019-10-06',
+                time: '8PM CT',
+                displayTime: '11AM PT | 1PM CT | 2PM ET'
+            }
+        ],
+        ik: [
+            {
+                date: '2019-09-18',
+                time: '8PM CT',
+                displayTime: '6PM PT | 8PM CT | 9PM ET'
+            },            
+        ],
+        yfs: [
+            {
+                date: '2019-03-17',
+                time: '4PM CT',
+                displayTime: '2PM PT | 5PM ET'
+            },        
+        ],
+        qna: [
+            {
+                date: '2019-03-30',
+                time: '7PM CT',
+                displayTime: '5PM PT | 7PM CT | 8PM ET'
+            }
+        ],
+        hatha: [
+            {
+                date: '2019-09-15',
+                time: '4PM CT',
+                displayTime: '2PM PT | 4PM CT | 5PM ET'
+            },
+            {
+                date: '2019-09-18',
+                time: '8PM CT',
+                displayTime: '6PM PT | 8PM CT | 9PM ET'
+            },
+        ]
+    }
+
+    var $ = window.$ || window.jQuery
+
+    var getWebinarDate = function (webinarType, options) {
+        if (options && options.multiple) {
+            return webinarDates[webinarType]
+        } else {
+            if (webinarType === 'intro') {
+                return webinarDates[webinarType][0]
+            } else {
+                return webinarDates[webinarType]
+            }
+        }
+    }
+
+    var getWebinarDateNew = function (webinarType) {
+        return newWebinarDates[webinarType]
+    }
+
+    var getDateTime = function (dateObject) {
+        return dateObject.date + ', ' + dateObject.time + ' CST'
+    }
+
+    var populateWebinarDatesOnPage = function () {
+        ;(['intro', 'ik', 'yfs', 'refresher']).forEach(function (webinarType) {
+            var webinarDate = getWebinarDate(webinarType)
+            ;(['date', 'time']).forEach(function (dateOrTime) {
+                $('.' + webinarType + '-webinar-' + dateOrTime + '-autofill').html(webinarDate[dateOrTime])
+            })
+            $('.' + webinarType + '-webinar-datetime-autofill').html(webinarDate.date + ', ' + webinarDate.time + ' CST')
+        })
+    }
+
+    webinarApi.getDateTime = getDateTime
+    webinarApi.getWebinarDate = getWebinarDate
+    webinarApi.getWebinarDateNew = getWebinarDateNew
+    webinarApi.populateWebinarDatesOnPage = populateWebinarDatesOnPage
+})()
+
+// Only used for testing right now
+if (typeof module !== 'undefined' && module) {
+    module.exports = webinarApi
+}

@@ -1,0 +1,66 @@
+@font-face {
+  font-family: "nyt-cheltenham-wide-hinted";
+  src: local("☺︎"), url("/fonts/nyt-cheltenham-wide-hinted-400-normal.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+}          
+@font-face {
+  font-family: "nyt-stymie";
+  src: local("☺︎"), url("/fonts/nyt-stymie-300-normal.woff") format("woff");
+  font-style: normal;
+  font-weight: 300;
+}          
+@font-face {
+  font-family: "nyt-stymie";
+  src: local("☺︎"), url("/fonts/nyt-stymie-500-normal.woff") format("woff");
+  font-style: normal;
+  font-weight: 500;
+}          
+@font-face {
+  font-family: "nyt-stymie";
+  src: local("☺︎"), url("/fonts/nyt-stymie-700-normal.woff") format("woff");
+  font-style: normal;
+  font-weight: 700;
+}          
+@font-face {
+  font-family: "nyt-cheltenham";
+  src: local("☺︎"), url("/fonts/nyt-cheltenham-200-normal.woff") format("woff");
+  font-style: normal;
+  font-weight: 200;
+}          
+@font-face {
+  font-family: "nyt-cheltenham";
+  src: local("☺︎"), url("/fonts/nyt-cheltenham-400-normal.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+}          
+@font-face {
+  font-family: "nyt-karnak-display-130124";
+  src: local("☺︎"), url("/fonts/nyt-karnak-display-130124-400-normal.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+}          
+@font-face {
+  font-family: "nyt-franklin";
+  src: local("☺︎"), url("/fonts/nyt-franklin-300-normal.woff") format("woff");
+  font-style: normal;
+  font-weight: 300;
+}          
+@font-face {
+  font-family: "nyt-franklin";
+  src: local("☺︎"), url("/fonts/nyt-franklin-500-normal.woff") format("woff");
+  font-style: normal;
+  font-weight: 500;
+}          
+@font-face {
+  font-family: "nyt-franklin";
+  src: local("☺︎"), url("/fonts/nyt-franklin-700-normal.woff") format("woff");
+  font-style: normal;
+  font-weight: 700;
+}          
+@font-face {
+  font-family: "nyt-franklin";
+  src: local("☺︎"), url("/fonts/nyt-franklin-800-normal.woff") format("woff");
+  font-style: normal;
+  font-weight: 800;
+}          
