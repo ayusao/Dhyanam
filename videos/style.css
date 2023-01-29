@@ -18,8 +18,7 @@ h1{
     display: flex;
     flex-wrap: wrap;
 }
-embed{
-    position: relative;
+video{
     display: block;
     margin: 10px 20px;
     padding: 20px;
@@ -31,12 +30,12 @@ embed{
     position: relative;
   }
   
-.video-description {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-}
+  .videos .video-description {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+  }
   
 .video-description:hover {
     text-decoration: underline;
