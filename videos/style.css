@@ -31,12 +31,12 @@ embed{
     position: relative;
   }
   
-  .video-description {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-  }
+.video-description {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
   
 .video-description:hover {
     text-decoration: underline;
