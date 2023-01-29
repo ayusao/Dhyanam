@@ -18,7 +18,7 @@ h1{
     display: flex;
     flex-wrap: wrap;
 }
-embed{
+video{
     display: block;
     margin: 10px 20px;
     padding: 20px;
