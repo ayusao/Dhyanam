@@ -1,0 +1,52 @@
+$(document).ready(function () {
+                var dfpslots=$(".adSlotdfp");
+               // console.log(dfpslots);
+                var i=0;
+                var slot= new Array();               
+                if (dfpslots.length) {
+                    googletag.cmd.push(function() {
+                        // Audience Segment Targeting 
+                        var _auds = new Array();
+                        if(typeof(_ccaud)!='undefined') {		
+                            for(var i=0;i<_ccaud.Profile.Audiences.Audience.length;i++)
+                            if(i<200)
+                            _auds.push(_ccaud.Profile.Audiences.Audience[i].abbr);
+                        }
+                        //End Audience Segment Targeting 
+
+                        //Contextual Targeting 
+                        var _HDL = '';
+                        var _ARC1 = '';
+                        if(window.location.pathname=='/article/these-parents-are-keeping-the-art-of-bedtime-storytelling-alive'){
+                            var _Hyp1 = 'These parents are keeping the art of bedtime storytelling alive'; 
+                        }else{
+                            var _Hyp1 = ''; 
+                        }
+			var _article = '';
+                        var _tval = function(v) {
+                        if(typeof(v)=='undefined') return '';
+                        if(v.length>100) return v.substr(0,100);
+                        return v;
+                        }
+                        // End Contextual Targeting 
+                       $(dfpslots).each(function(){
+                         if($(this).attr('data-dfp') != "" && $(this).attr('id') != ''){  
+                            if ($(this).attr('data-sizes')) {
+				var sizes = $(this).data('sizes');
+                            }                         
+                           googletag.defineSlot($(this).attr('data-dfp'), sizes,$(this).attr('id')).addService(googletag.pubads());
+                         }
+                        });
+                        googletag.pubads().setTargeting('sg', _auds).setTargeting('HDL', _tval(_HDL)).setTargeting('ARC1', _tval(_ARC1)).setTargeting('Hyp1', _tval(_Hyp1)).setTargeting('article', _tval(_article));    
+                        googletag.pubads().enableSingleRequest(); // Breaks channel reporting
+                        googletag.pubads().collapseEmptyDivs();
+                        googletag.enableServices();
+
+                        $(dfpslots).each(function(){   
+                            if($(this).attr('data-dfp') != "" && $(this).attr('id') != ''){
+                                googletag.display($(this).attr('id'));
+                            }
+                        });
+                    });
+                } 
+});

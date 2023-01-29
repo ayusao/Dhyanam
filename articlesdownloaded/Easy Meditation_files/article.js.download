@@ -1,0 +1,26 @@
+/*
+ * Article JS
+ * Team Speakingtree
+ */
+var article = {
+    setTitleSize:function(type){
+        var title = $('#main-article-h1').text();
+        if(type === "mobile"){
+            if(title.length < 20){
+                $('#main-article-h1').css('font-size','33px');
+            }else if(title.length > 20 && title.length < 50){
+                $('#main-article-h1').css('font-size','28px');
+            }else{
+                $('#main-article-h1').css('font-size','16px');
+            }
+        }else{
+            if(title.length < 20){
+                $('#main-article-h1').css('font-size','95px');
+            }else if(title.length > 20 && title.length < 50){
+                $('#main-article-h1').css('font-size','70px');
+            }else{
+                $('#main-article-h1').css('font-size','50px');
+            }
+        }
+    }
+};

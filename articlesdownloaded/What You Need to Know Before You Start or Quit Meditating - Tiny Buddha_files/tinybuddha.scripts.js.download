@@ -1,0 +1,18 @@
+jQuery(document).ready(function(){
+
+	var options = {};
+	jQuery('a.popup').popup(options);
+	jQuery('li.popup a').popup(options);
+
+	jQuery('map').imageMapResize();
+	
+	jQuery('#sidebar .bbp-login-links').after('<span class="clearfix"/><p class="rls">Looking for <a href="https://recreateyourlifestory.com/?utm_source=tb&utm_medium=login&utm_campaign=01" target="_blank">Recreate Your Life Story</a>? <a href="https://recreateyourlifestory.com/member-login/" target="_blank">Login here.</a></p>');
+
+
+if ( jQuery( 'div.featured' ).length ) {
+	jQuery('div.featured').flexslider({
+		animation: "slide"
+	});
+}
+
+});

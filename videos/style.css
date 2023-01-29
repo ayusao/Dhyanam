@@ -19,6 +19,7 @@ h1{
     flex-wrap: wrap;
 }
 embed{
+    position: relative;
     display: block;
     margin: 10px 20px;
     padding: 20px;
@@ -26,3 +27,18 @@ embed{
     height: 320px;
     align-items: center;
 }
+.video-container {
+    position: relative;
+  }
+  
+  .video-description {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+  }
+  
+.video-description:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }

@@ -1,0 +1,203 @@
+/**
+ * Created by alex on 3/7/17.
+ */
+
+var eventApi = {};
+
+(function () {
+    var $ = $ || jQuery
+
+    // This is a reference for evtMCd field. There's actually a evtType field but that has different values
+    var EVENT_TYPES = {
+        upaYoga: '14',
+        freeYogaDay: '15'
+    }
+
+    var formatDate = function () {
+        var d = new Date(),
+            month = '' + (d.getMonth() + 1),
+            day = '' + d.getDate(),
+            year = d.getFullYear();
+
+        if (month.length < 2) month = '0' + month;
+        if (day.length < 2) day = '0' + day;
+
+        return [year, month, day].join('-');
+    }
+
+    /**
+     * Sort array of objects by key or array of keys
+     */
+    var sortByKey = function (arr, keys) {
+        if (!Array.isArray(keys)) {
+            keys = [keys]
+        }
+        function compare(a, b) {
+            for (var index in keys) {
+                var key = keys[index]
+                if (a[key] < b[key])
+                    return -1;
+                if (a[key] > b[key])
+                    return 1;
+            }
+            return 0;
+        }
+
+        arr.sort(compare);
+    }
+
+    var isEventFull = function (event) {
+        return event.evtStatus === '2'
+    }
+
+    var parseFreeEventsResponse = function (response) {
+        // Uncomment the below and comment out the two next lines when this
+        // API is retired
+        var parsed = []
+
+        // var data = response.split("status=0:")[1]
+        // var parsed = JSON.parse(data)
+
+        // FYD event is the only purpose of this script at this point
+        parsed.push({
+            evtStDate: '2023-02-04',
+            evtMCd: EVENT_TYPES.freeYogaDay,
+            evtCity: 'IIIs'
+        })
+
+        return parsed
+    }
+
+    var getApiUrl = function (path) {
+        return 'https://online.innerengineering.com' + path
+    }
+
+    var getNewApiUrl = function (path) {
+        return 'https://registration.innerengineering.com/ieo/newadmin/api' + path
+    }
+
+    var getFreeEvents = function (options) {
+        // Uncomment the below and comment the existing code when we retire this API
+        // Comment out the actual API call because that endpoint doesn't exist anymore
+        options.success(parseFreeEventsResponse());
+        return
+
+
+        // get all free events starting from today and invoke callback.
+        // var url = getApiUrl('/ieo/ieoApiRequest.php')
+        //
+        // $.ajax({
+        //     url: url,
+        //     type: 'POST',
+        //     data: {
+        //         'apiver': 1.2
+        //         , 'apitype': 'EVENTL'
+        //         , 'vId': 'CTNE'
+        //         , 'evtStDt' : formatDate()
+        //     },
+        //     success: function(data) {
+        //         options.success(parseFreeEventsResponse(data));
+        //     },
+        //     error: function(xhr, desc, err) {
+        //         console.log("Failed fetching free events");
+        //         console.log(xhr);
+        //         console.log("Details: " + desc + "\nError:" + err);
+        //         options.error && options.error(xhr, desc, err)
+        //     }
+        // }); // end ajax call
+    }
+
+    var filterEvents = function (events, options) {
+        var filteredEvents = events
+        if (options.type) {
+            filteredEvents = filteredEvents.filter(function (event) {
+                return event.evtMCd === options.type
+            })
+        }
+
+        if (options.filterByFields) {
+            filteredEvents = filteredEvents.filter(function (event) {
+                for (var field in options.filterByFields) {
+                    var fieldValue = event[field].trim()
+                    var filterValue = options.filterByFields[field];
+
+                    if (options.ignoreCase) {
+                        fieldValue = fieldValue.toLowerCase()
+                        filterValue = filterValue.toLowerCase()
+                    }
+
+                    if (fieldValue !== filterValue) {
+                        return false
+                    }
+                }
+                return true
+            })
+        }
+
+        if (options.sortBy) {
+            if (Array.isArray(options.sortBy)) {
+                sortByKey(filteredEvents, options.sortBy)
+            } else if (options.sortBy === 'date') {
+                sortByKey(filteredEvents, 'evtStDate')
+            } else if (options.sortBy === 'city') {
+                sortByKey(filteredEvents, 'evtCity')
+            }
+        }
+        if (options.sortByDate) {
+            sortByKey(filteredEvents, 'evtStDate')
+        }
+
+        if (options.count) {
+            filteredEvents = filteredEvents.slice(0, options.count)
+        }
+
+        return filteredEvents
+    }
+
+    var getFirstFreeEventOfType = function (events, type) {
+        return filterEvents(events, {
+            type: type,
+            sortByDate: true,
+            count: 1
+        })[0]
+    }
+
+    var serializePostRsvpData = function (options) {
+        var eventId = options.eventId || options.event.evtid
+        var eventType = options.event.evtType
+        var data = {
+            evtId: parseInt(eventId),
+            evtType: parseInt(eventType),
+            fname: options.firstName,
+            lname: options.lastName,
+            email: options.email,
+            pPhone: options.phone || '',
+            noGuest: parseInt(options.guests || 1),
+        }
+        // if (options.phone) data.pPhone = options.phone
+        return JSON.stringify(data)
+    }
+
+    var postRsvp = function (options) {
+        var serializedData = serializePostRsvpData(options)
+        var url = getNewApiUrl('/events/rsvp')
+        $.ajax({
+            url: url,
+            type: 'POST',
+            data: serializedData,
+            success: function(json) {
+                options.success(json);
+            },
+            error: function(xhr, desc, err) {
+                options.error(xhr, desc, err);
+            }
+        }); // end ajax call
+    }
+
+    eventApi.EVENT_TYPES = EVENT_TYPES
+    eventApi.getFreeEvents = getFreeEvents
+    eventApi.getFirstFreeEventOfType = getFirstFreeEventOfType
+    eventApi.filterEvents = filterEvents
+    eventApi.postRsvp = postRsvp
+    eventApi.isEventFull = isEventFull
+})()
