@@ -1,0 +1,618 @@
+/*
+Theme Name: Univero
+Theme URI: https://ninzio.com/univero
+Author: Ninzio
+Author URI: https://ninzio.com/
+Description: Univero is clean theme, it's used Ninzio Framework.
+Version: 1.2
+License: Split License
+License URI: https://help.market.envato.com/hc/en-us/articles/202501064-What-is-Split-Licensing-and-the-GPL-
+Tags: custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready
+Text Domain: univero
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+body{ font-family: 'Poppins', sans-serif!important;}
+#myNavbar ul li:hover .dropdown-menu{display:block!important}
+
+img{
+    max-width: 100%;
+    height:auto;
+}
+.media-left img{
+    max-width: none;
+}
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+.aligncenter, div.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+}
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+a img.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+a img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+.entry-title a:hover {
+	color: #0088cc;
+}
+.wp-caption {
+    background: #fff;
+    max-width: 96%; /* Image does not overflow the content area */
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
+}
+.wp-caption p.wp-caption-text {
+    font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px;
+}
+/* Text meant only for screen readers. */
+.screen-reader-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+.screen-reader-text:focus {
+    background-color: #f1f1f1;
+    border-radius: 3px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+    clip: auto !important;
+    color: #21759b;
+    display: block;
+    font-size: 14px;
+    font-size: 0.875rem;
+    font-weight: bold;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000; /* Above WP toolbar. */
+}
+.gallery-caption {
+    box-sizing: border-box;
+}
+.bypostauthor{
+    box-sizing: border-box;
+}
+.wpml-ls-legacy-dropdown .wpml-ls-flag + span {
+    color: #999999;
+}
+.archive-shop .ninzio-pagination span.next::before,
+.archive-shop .ninzio-pagination a.next::before {content:'';}
+.archive-shop .ninzio-pagination span.prev::before,
+.archive-shop .ninzio-pagination a.prev::before{content:'';}
+/* Megamenu mobile custom styling */
+@media (max-width: 1024px) {
+	#ninzio-header-mobile .navbar-offcanvas .navbar-nav .menu-megamenu-container li.active > a {
+		background-color: #282b31;
+		color: #999999 !important;
+	}
+	#main-mobile-menu .has-submenu > .sub-menu li > a,
+	#main-mobile-menu .widget .widgettitle {
+		font-size: 13px;
+		text-align: center;
+	}
+	#main-mobile-menu .has-submenu > .sub-menu .menu-megamenu-container li:last-child > a {
+		border-bottom: 1px solid #3e4146;
+	}
+	#main-mobile-menu .vc_col-sm-3 {
+		width: 100%;
+	}
+	.navbar-nav .sub-menu .widget-title:before, .navbar-nav .sub-menu .widgettitle:before {
+		width: 100%;
+		height: 1px;
+		background-color: #3e4146; 
+	}
+	.header-mobile .widget {
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+}
+/* Hero sections responsive custom styling */
+@media (max-width: 1880px) {
+	.mobile-padding-0 .vc_column-inner {
+		padding-left: 50px !important;
+		padding-right: 50px !important;
+	}
+}
+@media (max-width: 1500px) {
+	.mobile-padding-0 .vc_column-inner {
+		padding-left: 30px !important;
+		padding-right: 30px !important;
+	}
+}
+@media (max-width: 1600px) {
+	.hidden-class-1 {
+		display: none;
+	}
+}
+@media (max-width: 1400px) {
+	.hidden-class-2 {
+		height: 40px !important;
+	}
+}
+.widget_shopping_cart_content .cart_list  img {
+    max-width: 80px;
+}
+
+
+
+
+/*Child themes*/
+
+
+/* Write here your own personal stylesheet */
+
+.single-post .entry-description h2
+{
+    font-size: 29px;
+}
+.single-post .entry-description h3
+{
+    font-size: 26px;
+}
+.single-post .entry-description h4
+{
+    font-size: 23px;
+}
+.single-post .entry-description h5
+{
+    font-size: 20px;
+}
+.single-post .entry-description h6
+{
+    font-size: 18px;
+}
+.single-post .entry-description a 
+{
+    color: #bf1e2e !important;
+}
+.entry-title a{font-family: 'Roboto', sans-serif!important;}
+.single-post .entry-description h1, h2, h3, h4, h5, h6
+{
+	font-family: 'Poppins', sans-serif!important;
+/*     font-family: 'Roboto', sans-serif!important; */
+    /* font-family: Ubuntu,Arial,sans-serif !important; */
+    color: #424242 !important;
+    font-weight: 500 !important;
+}
+.single-post h1 
+{
+    font-size: 25px;
+	font-family: 'Poppins', sans-serif!important;
+/*     font-family: 'Roboto', sans-serif!important; */
+    /* font-family: Ubuntu,Arial,sans-serif !important; */
+    color: #101010;
+    background: #decece;
+    opacity: 0.8;
+    padding: 10px 10px 10px 10px;
+}
+.single-post .entry-description p
+{
+	font-family: 'Poppins', sans-serif!important;
+/*     font-family: 'Roboto', sans-serif!important; */
+    /* font-family: Ubuntu,Arial,sans-serif; */
+    font-size: 14px;
+    font-weight: 300;
+    color: #424242;
+    margin-bottom: 22px;
+}
+.single-post .ninzio-footer h4{
+    color: #ffffff !important;
+}
+.nav-links {
+    border: 1px solid;
+    padding: 17px;
+}
+img.attachment-full.unveil-image {
+    width: 879px !important;
+}
+.blog .ninzio-breadscrumb{
+    display: none;
+}
+
+.single-post .entry-description ul li:before
+{
+  	content: "\f111" !important;
+    font-family: FontAwesome;
+    color: #000;
+    font-size: 8px !important;
+    left: 15px;
+    position: absolute;
+    margin-left: 19px;
+    margin-top: 7px !important;
+}
+
+
+.single-post .entry-description ul li
+{
+	margin-top: 5px;
+}
+
+.single-post .entry-description ul
+{
+	margin-left: 40px;
+    margin-top: 22px !important;
+    font-size: 19px !important;
+	font-family: 'Poppins', sans-serif!important;
+/*     font-family: Ubuntu,Arial,sans-serif; */
+    font-size: 18px;
+    font-weight: 300;
+    color: #424242;
+    margin-bottom: 22px;
+
+}
+
+
+
+.single-post .entry-description ul li ul li:before
+{
+    content: "\f10c" !important;
+    font-family: FontAwesome;
+    color: #000;
+    font-size: 10px !important;
+    left: 46px;
+    position: absolute;
+    margin-left: 19px;
+    margin-top: 6px;
+}
+
+/* custom css code */
+.navbar-nav > li {
+    padding-right: 0px;
+}
+.navbar-nav > li a{
+    font-size: 13px !important;
+}
+.nav > li > a {
+    padding: 15px 7px !important;
+}
+.navbar-inverse .navbar-collapse{
+    margin-left: 80px !important;
+}
+.navbar-inverse .navbar-nav > li > a {
+    color: #9d9d9d !important;
+}
+.navbar-inverse .navbar-nav > li > a:hover {
+    color: #9a3c3a;
+    background-color: transparent;
+}
+.mega-menu {
+    width: 800px !important;
+    max-width: none !important;
+}
+.usefull .mega-menu {
+    width: 355px !important;
+    max-width: none !important;
+}
+.navbar-nav > li > .dropdown-menu {
+    background: #ffffff;
+    top: 130%;
+    left: -174px;
+}
+.mega-menu li {
+    width: 155px !important;
+}
+.mega-menu li .figure img {
+    width: 173px !important;
+    height: 63px;
+    object-fit: cover;
+}
+.navbar-inverse.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+.navbar-inverse.sticky .navbar-brand > img {
+    width: 100px;
+}
+.fa-angle-down:before {
+  content: "\f107" !important;
+}
+.bg-theme {
+    background-color: #ca512d;
+}
+.ninzio-pagination span:hover{
+    background: #ca512d;
+}
+.ninzio-pagination a:active{
+    background: #17c787;
+}
+.ninzio-pagination span.current{
+    border-color: #ca512d;
+    background: #ca512d;
+}
+.ninzio-pagination a:hover {
+    color: #FFFFFF !important;
+    background: #ca512d;
+    border-color: #ca512d;
+}
+.navbar-inverse {
+    background-color: #fff;
+    border-color: #090909;
+}
+.related-posts-content .owl-carousel.owl-loading {
+    opacity: inherit;
+    display: block;
+}
+.related-posts-content .post-grid{
+    width: 30%;
+    float: left;
+    margin-right: 20px;
+    background: #ffffff;
+}
+::selection {
+    color: #10100f;
+    background: #fd6c01;
+}
+.single-post .ninzio-breadscrumb.layout1 .ninzio-breadscrumb-top .breadscrumb-title {
+    padding: 6% 101px;
+    position: absolute;
+    max-width: 50%;
+}
+
+
+.single-post .ninzio-breadscrumb.layout1 .ninzio-breadscrumb-top .breadscrumb-title h1{
+    line-height: 35px;
+
+}
+
+
+.related-posts .related-posts-content .post-grid
+{
+	min-height: 300px;
+}
+
+.blog-head-menuu .navbar-nav
+{
+	width: auto !important;
+}
+
+.blog-head-menuu .navbar-nav
+{
+	/*width: auto !important;*/
+}
+
+.blog-head-menuu .navbar-nav > li > a i {
+    display: inline-block;
+}
+
+#ninzio-main-content .ninzio-breadscrumb .breadcrumb .list-breadcrumb li {
+    color: #333 !important;
+}
+
+#ninzio-main-content .ninzio-breadscrumb .breadcrumb a{
+    color: #333 !important;
+}
+#ninzio-main-content .ninzio-breadscrumb .breadcrumb a:hover {
+    color: #CA512D !important;
+}
+
+.detail-post .entry-info .entry-meta span
+{
+	color: #333 !important;
+}
+
+.detail-post .entry-info .entry-meta span a
+{
+	color: #333 !important;
+}
+
+.detail-post .entry-info .entry-meta span a:hover
+{
+	    color: #CA512D !important;
+}
+
+.related-posts .related-posts-content .entry-image-wrapper img
+{
+	height: 159px;
+    object-fit: cover;
+}
+.search .entry-header{   
+    background: #fff;
+    border-top: #fe7d2c 5px solid;
+    padding-top: 10px;
+    margin-left: 50px;
+}
+.search .comments-link{   
+    display: none;
+}
+.search .more-link {
+    display:  inline-block;
+    background-color: #ca512d;
+    color: #fff;
+}
+.search .entry-footer{
+    margin-top: 10px;
+}
+.search .entry-footer span{
+    margin-right: 10px;
+}
+.search .entry-footer a {
+    color: #ca512d;
+}
+.search .entry-footer .entry-date {
+    background: #ca512d;
+}
+.detail-content .single-info .entry-description h2
+{
+	font-weight: bold !important;
+	text-transform: none;
+	margin-bottom: 20px;
+}
+
+
+.detail-content .single-info .entry-description h3
+{
+	font-weight: bold !important;
+	text-transform: none;
+	margin-bottom: 20px;
+}
+
+.detail-content .single-info .entry-description h4
+{
+	font-weight: bold !important;
+	text-transform: none;
+	margin-bottom: 20px;
+}
+
+
+.sidebar .widget .widget-title:after
+{
+	background-color: #CA512D !important;	
+}
+
+.media-post-layout .posts-list .post-list .media-body h4 a:hover
+{
+	color: #CA512D !important;
+	text-decoration: none;	
+}
+
+.pull-right ul li a:hover
+{
+	color: #CA512D !important;
+	text-decoration: none;		
+}
+
+.pull-right ul li a
+{
+	color: #555 !important;
+	text-decoration: none;		
+}
+
+.layout-blog .style-grid .entry-content .entry-title a:hover {
+    color: #CA512D !important;
+    text-decoration: none;
+}
+
+
+.paging-navigation .ninzio-pagination a:hover
+	{
+		background-color: #CA512D !important;
+	}
+
+.paging-navigation .ninzio-pagination a::selection
+{
+	background-color: #CA512D !important;
+}
+
+.wp-block-group .wp-block-group__inner-container .blocks-gallery-grid li:before
+{
+	display: none;
+}
+
+
+@media (max-width: 768px)
+{
+
+
+.single-post .ninzio-breadscrumb.layout1 .ninzio-breadscrumb-top .breadscrumb-title {
+    padding: 4% 0px;
+     position: relative; 
+    /*max-width: 58%;*/
+}
+
+.single-post .ninzio-breadscrumb.layout1 .ninzio-breadscrumb-top .breadscrumb-title h1 {
+    line-height: 20px;
+}
+
+.single-post h1 {
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif!important; 
+    /* font-family: Ubuntu,Arial,sans-serif !important; */
+    color: #101010;
+    background: #decece;
+    opacity: 0.8;
+    /* padding: 10px 10px 10px 10px; */
+ }
+
+.ninzio-breadscrumb.layout1 .ninzio-breadscrumb-top
+{
+    min-height: 182px;
+}
+
+#main-container .main-titl
+{
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 40px;
+}
+
+    .mega-menu {
+        width: 0px !important;
+        max-width: none !important;
+    }
+    .blog-head-menuu .navbar-brand {
+    float: left;
+    height: 50px;
+    padding: 0px 0px;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.blog-head-menuu .mega-menu li .figure {
+    display: inline-block;
+}
+
+.blog-head-menuu  .navbar-nav > li > .dropdown-menu {
+    background: #ffffff;
+   	 min-width: 152px;	
+     left: 0px; 
+}
+
+}
+
+
+@media (min-width: 1200px)
+{
+	.style-grid .entry-image-wrapper img
+	{
+		height: 207px;
+		object-fit: cover;
+	}
+}

@@ -1,0 +1,37 @@
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    background-image: url("../assets/blurredimage.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+h1{
+    text-align: center;
+}
+a{
+    color: #000;
+    text-decoration: none;
+}
+.lists{   
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.lists img {
+    height: 200px;
+    width: 250px;
+    padding: 20px 20px 0px 20px;
+    margin: 10px 30px;
+    display: block;
+    cursor: pointer;
+  }
+.description {
+    font-size: 20px;
+    text-align: center;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+a .description:hover {
+    text-decoration: underline;
+  }

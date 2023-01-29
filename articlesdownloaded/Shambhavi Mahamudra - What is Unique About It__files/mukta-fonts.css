@@ -1,0 +1,167 @@
+@font-face {
+  /* Fedra Serif A Book */
+  font-family: 'FedraSerifAStdBook';
+  src: local('serif'), url(WF-028154-009464-000003.eot);
+  src: local('serif'), url(WF-028154-009464-000003.eot?#iefix) format('embedded-opentype'),
+      url(WF-028154-009464-000003.woff) format('woff'),
+      url(WF-028154-009464-000003.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  font-display: swap;
+}
+
+@font-face {
+  /* Fedra Sans Book */
+  font-family: 'FedraSansStd-book';
+  src: local('sans-serif'), url(WF-028154-009464-000007.eot);
+  src: local('sans-serif'), url(WF-028154-009464-000007.eot?#iefix) format('embedded-opentype'),
+      url(WF-028154-009464-000007.woff) format('woff'),
+      url(WF-028154-009464-000007.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  font-display: swap;
+}
+
+@font-face {
+  /* Fedra Sans Book Italic */
+  font-family: 'FedraSansStd-book-i';
+  src: local('sans-serif'), url(WF-028154-009464-000008.eot);
+  src: local('sans-serif'), url(WF-028154-009464-000008.eot?#iefix) format('embedded-opentype'),
+      url(WF-028154-009464-000008.woff) format('woff'),
+      url(WF-028154-009464-000008.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  font-display: swap;
+}
+
+@font-face {
+  /* Fedra Sans Medium */
+  font-family: 'FedraSansStd-medium';
+  src: local('sans-serif'), url(WF-028154-009464-000021.eot);
+  src: local('sans-serif'), url(fonts/WF-028154-009464-000021.eot?#iefix) format('embedded-opentype'),
+    url(WF-028154-009464-000021.woff) format('woff'),
+    url(WF-028154-009464-000021.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  font-display: swap;
+}
+
+@font-face {
+  /* Fedra Sans A Medium */
+  font-family: 'FedraSansStd-A-medium';
+  src: local('serif'), url(WF-028154-009464-000050.eot);
+  src: local('serif'), url(WF-028154-009464-000050.eot?#iefix) format('embedded-opentype'),
+    url(WF-028154-009464-000050.woff) format('woff'),
+    url(WF-028154-009464-000050.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  font-display: swap;
+}
+
+@font-face {
+  /* Tamil */
+  font-family: 'MuktaMalar';
+  src: local('sans-serif'), url(MuktaMalar-Regular.woff2) format('woff2');
+  -webkit-font-smoothing: antialiased;
+  font-display: swap;
+}
+
+@font-face {
+  /* Hindi  */
+  font-family: 'Mukta';
+  src: local('sans-serif'), url(Mukta-Regular.woff2) format('woff2');
+  -webkit-font-smoothing: antialiased;
+  font-display: swap;
+}
+
+@font-face {
+  /* Fedra Sans Book Italic */
+  font-family: 'Fedra-Light';
+  src: local('sans-serif'), url(Fedra-Sans-Pro-Light-Light_17240.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  font-display: swap;
+}
+
+/* Merriweather */
+@font-face {
+  /* Merriweather Black */
+  font-family: 'MerriweatherBlack';
+  src: local('serif'), url(Merriweather-Black.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+}
+@font-face {
+  /* Merriweather Black */
+  font-family: 'MerriweatherBlackItalic';
+  src: local('serif'), url(Merriweather-BlackItalic.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+}
+@font-face {
+  /* Merriweather Black */
+  font-family: 'MerriweatherBold';
+  src: local('serif'), url(Merriweather-Bold.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+}
+@font-face {
+  /* Merriweather Black */
+  font-family: 'MerriweatherBoldItalic';
+  src: local('serif'), url(Merriweather-BoldItalic.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+}
+@font-face {
+  /* Merriweather Black */
+  font-family: 'MerriweatherItalic';
+  src: local('serif'), url(Merriweather-Italic.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+}
+@font-face {
+  /* Merriweather Black */
+  font-family: 'MerriweatherLight';
+  src: local('serif'), url(Merriweather-Light.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+}
+@font-face {
+  /* Merriweather Black */
+  font-family: 'MerriweatherLightItalic';
+  src: local('serif'), url(Merriweather-LightItalic.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+}
+@font-face {
+  /* Merriweather Black */
+  font-family: 'MerriweatherRegular';
+  src: local('serif'), url(Merriweather-Regular.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Open Sans */
+@font-face {
+  /* Open Sans Regular */
+  font-family: 'OpenSansRegular';
+  src: local('sans-serif'), url(OpenSans-Regular.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  font-display: swap;
+}
